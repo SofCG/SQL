@@ -1,0 +1,29 @@
+--Create a store database
+
+CREATE TABLE sofiasfashion (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, color TEXT, price INTEGER );
+
+INSERT INTO sofiasfashion VALUES (1,"Dress", 5,"Red", 30);
+INSERT INTO sofiasfashion VALUES (2,"Skirt", 8, "Black", 22);
+INSERT INTO sofiasfashion VALUES (3, "Trousers", 10, "Gray", 20);
+INSERT INTO sofiasfashion VALUES (4, "Shorts", 15, "White", 18);
+INSERT INTO sofiasfashion VALUES (5, "Jeans", 12, "Blue", 35);
+INSERT INTO sofiasfashion VALUES (6, "Skort", 5, "Pink", 15);
+INSERT INTO sofiasfashion VALUES (7, "Pants", 9, "Navy", 11);
+INSERT INTO sofiasfashion VALUES (8, "Shirt", 15, "Flowers", 20);
+INSERT INTO sofiasfashion VALUES (9, "Tshirt", 35, "Various", 8);
+INSERT INTO sofiasfashion VALUES (10, "Blouse", 4, "Purple", 23);
+INSERT INTO sofiasfashion VALUES (11, "Hoodie", 10, "Rainbow", 40);
+INSERT INTO sofiasfashion VALUES (12, "Leggins", 12, "Black", 20);
+INSERT INTO sofiasfashion VALUES (13, "Tanktop", 12, "Orange", 5);
+INSERT INTO sofiasfashion VALUES (14, "Blazer", 5, "Beige", 45);
+INSERT INTO sofiasfashion VALUES (15, "Sweater", 16, "Coral", 33);
+SELECT * FROM sofiasfashion ORDER BY price;
+SELECT SUM(quantity) FROM sofiasfashion;
+
+--display the database ordered by price. 
+SELECT * FROM sofiasfashion
+ORDER BY price; 
+
+--what is the sum of all of the items in the store?
+SELECT SUM(quantity
+FROM sofiasfashion
